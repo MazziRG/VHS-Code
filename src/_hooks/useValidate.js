@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// HOOK NOT IN USE
+// HOOK to  validate feilds
 const useValidate = ()=>{
     const [invalid, setInvalid] = useState(false)
     const onValidate = (value)=>{!value? setInvalid(true) : setInvalid(false)};

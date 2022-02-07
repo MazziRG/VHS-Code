@@ -6,7 +6,6 @@ export const Container = styled.div`
   min-height: 700px;
   padding-top: 3.5%;
 `
-
 export const Wrapper =styled(CSS)`
   align-items: center;
 `

@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import DropArea from './DropArea';
 // Css
 import{Label} from "../../_css/GlobalElements"
-import {Container, Wrapper, Img, ImgButton, Picture, AddImgIcon } from "./indexCSS";
+import {Container, Wrapper, Img, ImgButton, Picture, AddImgIcon } from "./indexStyled";
 // Assets Import 
 import profile from "../../_assets/profile.svg"
 import addImg from "../../_assets/add-img.svg"

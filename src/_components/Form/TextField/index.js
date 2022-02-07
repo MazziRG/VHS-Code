@@ -1,5 +1,5 @@
 
-import {useRef} from 'react';
+
 import styled from '@emotion/styled'
 import{Label , ErrorMessage, Wrapper} from "../../../_css/GlobalElements"
 import {useFormContext} from "../../../_hooks/useFormContext"
@@ -16,10 +16,11 @@ const Input =styled.input`
 
 const TextFeild = ({label = "Insert Title", required, defaultValue, type })=> {
   const {setError} = useFormContext()
+  // custom validation hook
   const [invalid, onValidate] =  useValidate()
-  const ref = useRef()
 
   const outOfFocus =(e)=>{
+    // valididates field after ur out of focus of input
     setError(e, !invalid)
     onValidate(e)
   }
@@ -34,7 +35,7 @@ const TextFeild = ({label = "Insert Title", required, defaultValue, type })=> {
         onBlur={(e)=>required  && outOfFocus(e)}
         invalid={invalid}
         type={type}
-        ref={ref}
+        id="input"
       />
       {invalid && <ErrorMessage>This Feild is requerd</ErrorMessage>}
     </Wrapper>

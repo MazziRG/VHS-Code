@@ -13,7 +13,7 @@ const Form = styled.form`
 
 const Forms = () => {
 
-
+    // Placeholder values to test the page
     const defaultValues = {
         "First Name": "Mazzi",
         "Last Name":"Garcia",

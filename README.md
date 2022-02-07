@@ -6,7 +6,11 @@
 </p>
 
 <h1 align="center"> Unicorn Form Project </h1>
+
 <p align="center"> A minimal Forms Project with specefied design! </p>
+
+![GitHub repo size](https://img.shields.io/badge/Library-React-blue)
+![GitHub repo size](https://img.shields.io/badge/Styles-Emotion-blueviolet)
 
 # Key Fetures
 - Easly change or update your Porfile 

@@ -23,11 +23,16 @@ const _Button = ({ label, backdrop}) => {
 
     const handleClick=(e)=>{
         e.preventDefault();
-        
-        if(label === "Discard"){
-            return;
-        };
 
+        // delete all text from input
+        if(label === "Discard"){
+            const i= document.querySelectorAll("input")
+            i.forEach(i=>i.value ="")
+            document.querySelector("textarea").value=""
+            return ;
+        };
+        
+        //  Toggels succes message is ther are no missing feilds 
         if(error)return;
         !toggle && setToggle(true)
         setTimeout(() => {

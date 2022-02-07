@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-import {DragArea} from "../indexCSS"
+import {DragArea} from "../indexStyled"
 
 const DropArea = ({children , handleUpload}) => {
   const [drag, setDrag] = useState(false);
