@@ -1,11 +1,10 @@
 import React, { useState, useRef } from 'react';
-import DropArea from './DropArea';
 // Css
 import{Label} from "../../_css/GlobalElements"
-import {Container, Wrapper, Img, ImgButton, Picture, AddImgIcon } from "./indexStyled";
-// Assets Import 
-import profile from "../../_assets/profile.svg"
-import addImg from "../../_assets/add-img.svg"
+import {Container, Wrapper, ImgButton } from "./indexStyled";
+// import comp
+import ProfileImg from "./ProfileImg"
+
 
 
 
@@ -32,20 +31,19 @@ const Avatar = () => {
         <Wrapper>
           <Label> Images</Label>
 
-           {/* Image Wrapper */}
-          <Img
-            onClick={()=>toggleButton()}
-            upload={upload}>
-            <DropArea handleUpload={e=>handleUpload(e)}>
-              <Picture src={upload? upload : profile}/>
-              {!upload && <AddImgIcon src ={addImg}/>}
-            </DropArea>
-          </Img>
+           {/* Profile Image comp */}
+          <ProfileImg 
+            upload={upload}
+            toggleButton={toggleButton}
+            handleUpload={handleUpload}
+          />
 
           {/* Image Button To Upload/Remove */}
           <ImgButton onClick={()=>toggleButton()}>
              {upload? "Remove" : "Upload" }
           </ImgButton>
+
+          {/* input for gathering file */}
           <input 
             type='file' 
             ref={inputRef}

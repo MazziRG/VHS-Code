@@ -3,6 +3,7 @@ import DateField  from "./DateField";
 import TextArea  from "./TextArea";
 import Button  from "./Button";
 import ConfirmMessage  from "../ConfirmMessage";
+import {useFormContext} from "../../_hooks/useFormContext"
 
 import styled from '@emotion/styled'
 
@@ -12,19 +13,20 @@ const Form = styled.form`
 `
 
 const Forms = () => {
+    const {error} = useFormContext
 
     // Placeholder values to test the page
     const defaultValues = {
         "First Name": "Mazzi",
         "Last Name":"Garcia",
         "Email": "Mazzi.Garcia98@gmail.com",
-        "Phone":"(123)-456-7890",
+        "Phone":"123-456-7890",
         "Bio":"Deafult Values for VHS Coding Challange"
     }
    
     return (
         <Form data-testid="form" >
-            <ConfirmMessage />
+           { error? null: <ConfirmMessage />}
             <h3> Setting</h3>
             <TextField
                 defaultValue={defaultValues}

@@ -11,7 +11,9 @@ export const FormProvider = (props)=>{
     const [state, setState]=useState({
         "toggle":false,
         "setToggle": update=>{setState({...state, "toggle":update})},
-        "setError": (error)=>setState({...state, error:error}),
+        "setError": e=>!e.target.value?
+            setState({...state, error:true}):
+            setState({...state, error:false}),
         "error":false
     })
 
