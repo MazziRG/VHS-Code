@@ -1,0 +1,64 @@
+*{
+  /* border:1px solid blue */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+main{
+  background: hsla(218, 14%, 15%, 1);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  box-sizing:border-box;
+}
+
+hr{
+  width: 100%;
+  border: 1px solid hsla(208, 100%, 97%, 0.12);
+}
+
+h3{
+  color: hsla(208, 100%, 97%, 1);
+  font-style: Bold;
+}
+
+input, textarea, button{
+  border: 1px solid hsla(208, 100%, 97%, 0.32);
+  box-sizing: border-box;
+  background: rgba(240, 248, 255, 0.04);
+  border-radius: 5px;
+  min-height: 34px;
+  padding: 8px 14px;
+  margin: 5px 0;
+  color: hsla(208, 100%, 97%, 0.64);
+  cursor: pointer;
+}
+
+
+#Null {
+  color: red;
+}
+
+input:hover, textarea:hover{
+  border-color: hsla(208, 100%, 97%, 1);
+}
+
+input:focus,  textarea:focus{
+  border-color: hsla(163, 64%, 42%, 1);
+}
+
+
+
