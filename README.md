@@ -29,7 +29,7 @@
 To clone and run application, you'll need [GIT](https://git-scm.com/) and [NODE](https://nodejs.org/en/) width npm installed on your computer from your comand line 
 
     # clone this repository
-    $ git clone https://github.com/MazziRG/VHS-Code.git
+    $ git clone https://github.com/MazziRG/VHS-Forms.git
 
     # Go into repository
     $ cd vhs-code
